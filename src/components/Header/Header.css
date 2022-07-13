@@ -61,34 +61,3 @@
 
 
 }
-
-
-
-
-
-.logo {
-    position: absolute;
-}
-
-.logo img {
-    position: relative;
-    width: 50%;
-}
-
-/* .logo img {
-    position:fixed;
-    width: 97%;
-} */
-
-.menu {
-    display: flex;
-    flex-direction: row;
-    margin-left: 500px;
-    margin-bottom: -10px;
-}
-
-.menu p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 20px;
-    font-size: 15px;
-}
