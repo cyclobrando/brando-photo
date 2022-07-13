@@ -1,0 +1,10 @@
+.index-img {
+    width: auto;
+    height: auto;
+}
+
+.index-img img {
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+} 
