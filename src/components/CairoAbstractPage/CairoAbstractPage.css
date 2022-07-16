@@ -1,0 +1,23 @@
+.cairo-abstract-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 1%
+}
+
+.cairo-abstract-pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cairo-abstract-pics img {
+    max-width: 20%;
+    max-height: 20%;
+    margin: 1%;
+    margin-left: 0;
+}
+
+#cairo-abstracts {
+    text-decoration: underline;
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState } from 'react';
 import './Header.css'
 const Logo = require('./templogo.png')
 
@@ -14,8 +14,6 @@ const Header = () => {
             <p>About</p>
             <p>Contact</p>
         </div>
-      
-        
 
     </div>
   )
