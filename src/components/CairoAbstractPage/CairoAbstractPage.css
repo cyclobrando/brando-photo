@@ -1,7 +1,7 @@
 .cairo-abstract-container {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 1%
 }
 
@@ -20,4 +20,8 @@
 
 #cairo-abstracts {
     text-decoration: underline;
+}
+
+#pics:hover {
+    cursor: pointer;
 }

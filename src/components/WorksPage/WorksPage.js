@@ -1,9 +1,11 @@
-import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import Header from '../Header/Header'
 import './WorksPage.css'
-const CairoAb = require('../CairoAbstractPage/05.jpg')
+const CairoAb = require('../CairoAbstractPage/cairoAb05.jpg')
 
-const AbstractPage = () => {
+const WorksPage = () => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <Header/>
@@ -13,8 +15,11 @@ const AbstractPage = () => {
 
         <div className='works-abstract-container'>
           <div className='works-cairoab'>
-            <img src={CairoAb} alt="Cairo Abstracts" />
-            <p>Cairo Abstracts</p>
+            <img src={CairoAb} alt="Cairo Abstracts" 
+              onClick={() => {
+                navigate('/works/cairo-abstracts')}}/>
+            <p id="ab-click" onClick={() => {
+                navigate('/works/cairo-abstracts')}}>Cairo Abstracts</p>
           </div>
         </div>
         
@@ -25,4 +30,4 @@ const AbstractPage = () => {
   )
 }
 
-export default AbstractPage
+export default WorksPage

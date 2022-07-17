@@ -1,7 +1,7 @@
 .works-container {
     display: flex;
     flex-direction: column;
-    margin-left: 5%;
+    margin-left: 3%;
     margin-top: 1%
 }
 
@@ -17,4 +17,9 @@
 .works-cairoab img {
     max-width: 50%;
     max-height: 50%;
+    cursor: pointer;
+}
+
+#ab-click {
+    cursor: pointer;
 }

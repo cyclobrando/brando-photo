@@ -1,10 +1,16 @@
-.index-img {
-    width: auto;
-    height: auto;
+@media(max-width: 1225px) {
+    .index-img img {
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+    } 
 }
 
-.index-img img {
-    min-height: 100%;
-    width: 100%;
-    height: auto;
-} 
+@media(max-width: 1023px) {
+    .index-img img {
+        min-height: 100%;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+}

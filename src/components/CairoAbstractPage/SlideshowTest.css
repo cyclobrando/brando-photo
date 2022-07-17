@@ -1,0 +1,26 @@
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin-top: 1%
+}
+
+.left-arrow {
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 350px;
+}
+
+.right-arrow {
+    display: flex;
+    max-width: 50px;
+    max-height: 50px;
+    margin-top: 350px;
+}
+
+.slideshow-pics {
+    display: flex;
+    height: 800px;
+    width: 800px;
+}
