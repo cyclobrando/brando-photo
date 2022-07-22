@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Header from '../Header/Header'
-import './CairoAbstractPage.css'
+import '../../index.css'
 
 const CairoAb01 = require('./cairoAb01.jpg')
 const CairoAb02 = require('./cairoAb02.jpg')
@@ -16,15 +16,13 @@ const CairoAb11 = require('./cairoAb11.jpg')
 const CairoAb12 = require('./cairoAb12.jpg')
 
 const CairoAbstractPage = () => {
-  const {slideshow, setSlideshow} = useState(false);
-
   return (
     <div>
       <Header />
-      <div className='cairo-abstract-container'>
-        <p id="cairo-abstracts">Cairo Abstracts</p>
+      <div className='display-container'>
+        <p style={{ textDecoration: 'underline' }}>Cairo Abstracts</p>
 
-        <div className='cairo-abstract-pics'>
+        <div className='display-pics'>
           <img id="pics" src={CairoAb01} alt="Cairo Abstract 01" />
           <img id="pics" src={CairoAb02} alt="Cairo Abstract 02" />
           <img id="pics" src={CairoAb03} alt="Cairo Abstract 03" />
@@ -39,7 +37,7 @@ const CairoAbstractPage = () => {
           <img id="pics" src={CairoAb12} alt="Cairo Abstract 12" />
         </div>
 
-        <div className='cairo-abstract-text'>
+        <div className='display-text'>
           <p>Lorem ipsum something something</p>
         </div>
 

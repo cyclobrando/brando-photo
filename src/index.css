@@ -2,3 +2,27 @@ body, html {
     height: 100%;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+.display-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    margin-top: 1%
+}
+
+.display-pics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.display-pics img {
+    max-width: 22%;
+    max-height: 22%;
+    margin: 1%;
+    margin-left: 0;
+}
+
+#pics:hover {
+    cursor: pointer;
+}

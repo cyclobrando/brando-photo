@@ -1,5 +1,10 @@
 .slideshow-container {
     display: flex;
+    flex-direction: row;
+}
+
+.picture-container {
+    display: flex;
     flex-direction: column;
     justify-content: start;
     margin-top: 1%;
@@ -24,18 +29,27 @@
     margin-top: 1%;
 }
 
-.left-arrow {
+.arrows {
     display: flex;
     flex-basis: 15%;
     max-width: 50px;
     max-height: 50px;
     margin-left: 20px;
+    cursor: pointer;
 }
 
-.right-arrow {
+.empty-span {
     display: flex;
     flex-basis: 15%;
-    max-width: 50px;
-    max-height: 50px;
+    width: 50px;
+    height: 50px;
     margin-right: 20px;
+}
+
+#close {
+    max-width: 30px;
+    max-height: 30px;
+    margin-left: 10px;
+    margin-top: 20px;
+    cursor: pointer;
 }

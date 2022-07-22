@@ -15,6 +15,7 @@ const Header = () => {
           if (location.pathname === "/") {
             window.location.reload(false);
           } else navigate('/');
+          window.location.reload(false);
         }}/>
         </div>
     

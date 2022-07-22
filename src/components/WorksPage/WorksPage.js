@@ -3,6 +3,7 @@ import Header from '../Header/Header'
 import './WorksPage.css'
 const CairoAb = require('../CairoAbstractPage/cairoAb05.jpg')
 const PowerStr = require('../PowerStrugglesPage/dance-3.jpg')
+const Couches = require('../CouchesCairoPage/couches-1.jpg')
 
 const WorksPage = () => {
   const navigate = useNavigate();
@@ -11,30 +12,42 @@ const WorksPage = () => {
     <div>
       <Header/>
 
-      <div className='works-container'>
+      <div className='works-container2'>
 
-        <p id="ab-works">Abstract Works</p>
-        <div className='works-abstract-container'>
-          
-          <div className='works-cairoab'>
-            <img id="works-img" src={CairoAb} alt="Cairo Abstracts" 
-              onClick={() => {
-                navigate('/works/cairo-abstracts')}}/>
-            <p id="ab-click" onClick={() => {
+        <p id="cairo-works">Cairo, Illinois</p>
+        <div className='cairo-works-container'>
+
+            <div className='container-cell'>
+                <div className='img-container'>
+                    <img id='works-cairoab' src={CairoAb} alt="Cairo Abstracts" 
+                        onClick={() => {
+                        navigate('/works/cairo-abstracts')}}/>
+                </div>
+                <p id="click" onClick={() => {
                 navigate('/works/cairo-abstracts')}}>Cairo Abstracts</p>
-          </div>
+            </div>
 
-          <div className='works-powerstr'>
-            <img id="works-img" src={PowerStr} alt="Power Struggles" 
-              onClick={() => {
-                navigate('/works/power-struggles')}}/>
-            <p id="ab-click" onClick={() => {
+            <div className='container-cell'>
+                <div className='img-container'>
+                <img id="works-power" src={PowerStr} alt="Power Struggles" 
+                        onClick={() => {
+                        navigate('/works/power-struggles')}}/>
+                </div>
+                <p id="click" onClick={() => {
                 navigate('/works/power-struggles')}}>Power Struggles</p>
-          </div>
+            </div>
+
+            <div className='container-cell'>
+                <div className='img-container'>
+                <img id="works-img" src={Couches} alt="Couches of Cairo" 
+                    onClick={() => {
+                    navigate('/works/couches-of-cairo')}}/>
+                </div>
+                <p id="click" onClick={() => {
+                navigate('/works/couches-of-cairo')}}>Couches of Cairo</p>
+            </div>
+
         </div>
-
-
-        
       </div>
 
 
