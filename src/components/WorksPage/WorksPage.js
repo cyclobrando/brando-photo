@@ -11,7 +11,6 @@ const WorksPage = () => {
   return (
     <div>
       <Header/>
-
       <div className='works-container2'>
 
         <p id="cairo-works">Cairo, Illinois</p>
@@ -46,11 +45,8 @@ const WorksPage = () => {
                 <p id="click" onClick={() => {
                 navigate('/works/couches-of-cairo')}}>Couches of Cairo</p>
             </div>
-
         </div>
       </div>
-
-
     </div>
   )
 }
