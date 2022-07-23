@@ -3,7 +3,7 @@ import Header from '../Header/Header'
 import './WorksPage.css'
 const CairoAb = require('../CairoAbstractPage/cairoAb05.jpg')
 const PowerStr = require('../PowerStrugglesPage/dance-3.jpg')
-const Couches = require('../CouchesCairoPage/couches-1.jpg')
+const Couches = require('../CouchesPage/couches1.jpg')
 
 const WorksPage = () => {
   const navigate = useNavigate();

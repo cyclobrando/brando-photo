@@ -18,14 +18,14 @@ const CairoAb12 = require('./cairoAb12.jpg')
 
 const CairoAbstractPage = () => {
   const [slideshow, setSlideshow] = useState(false);
-  const [image, setImage] = useState("")
+  const [image, setImage] = useState("");
 
  if (!slideshow) {
   return (
     <div>
       <Header />
       <div className='display-container'>
-        <p style={{ textDecoration: 'underline' }}>Cairo Abstracts</p>
+        <p style={{ textDecoration: 'underline' }}>Cairo Abstracts - 2010</p>
 
         <div className='display-pics'>
           <img id="pics" src={CairoAb01} 

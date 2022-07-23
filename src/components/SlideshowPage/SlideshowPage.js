@@ -1,7 +1,8 @@
 import { useState } from "react"
-import { useNavigate } from 'react-router'
-import CairoAbstractPage from "../CairoAbstractPage/CairoAbstractPage"
 import Header from "../Header/Header"
+import CairoAbstractPage from "../CairoAbstractPage/CairoAbstractPage"
+import PowerStrugglesPage from "../PowerStrugglesPage/PowerStrugglesPage"
+import CouchesPage from "../CouchesPage/CouchesPage"
 import './SlideshowPage.css'
 
 const Left = require('./left-arrow.png')
@@ -13,7 +14,6 @@ const SlideshowTest = (props) => {
   const [leftOpen, setLeftOpen] = useState(false);
   const [rightOpen, setRightOpen] = useState(false);
   const [close, setClose] = useState(false);
-  const navigate = useNavigate();
 
   const leftClick = () => {
     if (props.work === "cairoAb") {
@@ -42,7 +42,8 @@ const SlideshowTest = (props) => {
       } else if (selected === "01") {
         setSelected("12")
       }
-    } else if (props.work === "dance") {
+    } 
+    if (props.work === "dance") {
       if (selected === "-7") {
         setSelected("-6")
       } else if (selected === "-6") {
@@ -57,33 +58,80 @@ const SlideshowTest = (props) => {
         setSelected("-7")
       }
     } 
+    if (props.work === "couches") {
+      if (selected === "6") {
+        setSelected("5")
+      } else if (selected === "5") {
+        setSelected("4")
+      } else if (selected === "4") {
+        setSelected("3")
+      } else if (selected === "3") {
+        setSelected("2")
+      } else if (selected === "2") {
+        setSelected("1")
+      } else if (selected === "1") {
+        setSelected("6")
+      }
+    }
   }
 
   const rightClick = () => {
-    if (selected === "01") {
-      setSelected("02")
-    } else if (selected === "02") {
-      setSelected("03")
-    } else if (selected === "03") {
-      setSelected("04")
-    } else if (selected === "04") {
-      setSelected("05")
-    } else if (selected === "05") {
-      setSelected("06")
-    } else if (selected === "06") {
-      setSelected("07")
-    } else if (selected === "07") {
-      setSelected("08")
-    } else if (selected === "08") {
-      setSelected("09")
-    } else if (selected === "09") {
-      setSelected("10")
-    } else if (selected === "10") {
-      setSelected("11")
-    } else if (selected === "11") {
-      setSelected("12")
-    } else if (selected === "12") {
-      setSelected("01")
+    if (props.work === "cairoAb") {
+      if (selected === "01") {
+        setSelected("02")
+      } else if (selected === "02") {
+        setSelected("03")
+      } else if (selected === "03") {
+        setSelected("04")
+      } else if (selected === "04") {
+        setSelected("05")
+      } else if (selected === "05") {
+        setSelected("06")
+      } else if (selected === "06") {
+        setSelected("07")
+      } else if (selected === "07") {
+        setSelected("08")
+      } else if (selected === "08") {
+        setSelected("09")
+      } else if (selected === "09") {
+        setSelected("10")
+      } else if (selected === "10") {
+        setSelected("11")
+      } else if (selected === "11") {
+        setSelected("12")
+      } else if (selected === "12") {
+        setSelected("01")
+      }
+    } 
+    if (props.work === "dance") {
+      if (selected === "-1") {
+        setSelected("-2")
+      } else if (selected === "-2") {
+        setSelected("-3")
+      } else if (selected === "-3") {
+        setSelected("-5")
+      } else if (selected === "-5") {
+        setSelected("-6")
+      } else if (selected === "-6") {
+        setSelected("-7")
+      } else if (selected === "-7") {
+        setSelected("-1")
+      }
+    }
+    if (props.work === "couches") {
+      if (selected === "1") {
+        setSelected("2")
+      } else if (selected === "2") {
+        setSelected("3")
+      } else if (selected === "3") {
+        setSelected("4")
+      } else if (selected === "4") {
+        setSelected("5")
+      } else if (selected === "5") {
+        setSelected("6")
+      } else if (selected === "6") {
+        setSelected("1")
+      }
     }
   }
 
@@ -128,6 +176,12 @@ const SlideshowTest = (props) => {
   if (close) {
     if (props.work === "cairoAb") {
       return <CairoAbstractPage />
+    }
+    if (props.work === "dance") {
+      return <PowerStrugglesPage />
+    }
+    if (props.work === "couches") {
+      return <CouchesPage />
     }
   }
 }

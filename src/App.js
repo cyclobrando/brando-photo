@@ -3,6 +3,7 @@ import WorksPage from './components/WorksPage/WorksPage';
 import IndexPage from './components/IndexPage/IndexPage';
 import CairoAbstractPage from './components/CairoAbstractPage/CairoAbstractPage';
 import PowerStrugglesPage from './components/PowerStrugglesPage/PowerStrugglesPage';
+import CouchesPage from './components/CouchesPage/CouchesPage';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route path='/works' element={<WorksPage />} exact/>
       <Route path='/works/cairo-abstracts' element={<CairoAbstractPage />} exact/>
       <Route path='/works/power-struggles' element={<PowerStrugglesPage />} exact/>
+      <Route path='/works/couches-of-cairo' element={<CouchesPage />} exact/>
     </Routes>
     </div>
   );
